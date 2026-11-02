@@ -1,0 +1,135 @@
+html {
+    box-sizing: border-box;
+}
+
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+body {
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+    background-color: #f1f5f9;
+    color: #0f172a;
+}
+
+header {
+    background-color: #1e293b;
+    color: #f8fafc;
+    text-align: center;
+    padding: 2rem 1rem;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2rem;
+}
+
+header p {
+    margin: 0.5rem 0 1.5rem 0;
+    color: #94a3b8;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a {
+    color: #94a3b8;
+    text-decoration: none;
+    font-weight: 600;
+    padding: 5px 10px;
+}
+
+nav a:hover, nav a.active {
+    color: #38bdf8;
+    border-bottom: 2px solid #38bdf8;
+}
+
+.container {
+    max-width: 50rem;
+    margin: 2rem auto;
+    padding: 0 1rem;
+}
+
+.card {
+    background: #ffffff;
+    padding: 2rem;
+    margin-bottom: 1.5rem;
+    border-radius: 4px;
+    border: 1px solid #cbd5e1;
+}
+
+.card h2 {
+    color: #1e293b;
+    margin-top: 0;
+    border-bottom: 2px solid #e2e8f0;
+    padding-bottom: 0.5rem;
+    font-size: 1.35rem;
+}
+
+.project-item, .timeline-item {
+    margin-bottom: 1.5rem;
+}
+
+button {
+    background-color: #1e293b;
+    color: #ffffff;
+    border: none;
+    padding: 8px 16px;
+    font-size: 0.875rem;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #334155;
+}
+
+/* Hidden Class Flag */
+.hidden {
+    display: none !important;
+}
+
+/* Dynamic State Transitions */
+.dynamic-status-panel {
+    background-color: #f8fafc;
+    border-left: 4px solid #38bdf8;
+    padding: 1rem;
+    margin-top: 1rem;
+    transition: all 0.3s ease-in-out;
+}
+
+.bio-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+.bio-table th, .bio-table td {
+    padding: 10px;
+    text-align: left;
+    border-bottom: 1px solid #cbd5e1;
+}
+
+.bio-table thead th {
+    background-color: #f8fafc;
+    color: #475569;
+    font-weight: 600;
+}
+
+footer {
+    text-align: center;
+    padding: 1.5rem;
+    background-color: #1e293b;
+    color: #64748b;
+    margin-top: 4rem;
+    font-size: 0.875rem;
+}

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>FirstName LastName | Academic Profile | CSE VTU</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+
+        <header>
+            <h1>FirstName LastName Portfolio</h1>
+            <p>Department of Computer Science and Engineering</p>
+            <nav aria-label="Main Navigation">
+                <ul>
+                    <li><a href="index.html" class="active" aria-current="page">Education &amp; Coursework</a></li>
+                    <li><a href="projects.html">Technical Projects</a></li>
+                </ul>
+            </nav>
+        </header>
+
+        <main class="container">
+            <article class="card">
+                <h2>Academic Progression</h2>
+                <p>Graduation Cycle: 2022 - 2026</p>
+                
+                <table class="bio-table">
+                    <caption>Curriculum Matrix</caption>
+                    <thead>
+                        <tr>
+                            <th scope="col">Academic Phase</th>
+                            <th scope="col">Theoretical Frameworks</th>
+                            <th scope="col">Technical Specializations</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th scope="row">Foundations (Sem 1-4)</th>
+                            <td>Data Structures, Operating Systems, Algorithms, DBMS</td>
+                            <td>C Coding, Python Data Packages, Microcontroller Firmware</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Systems &amp; Execution (Sem 5-6)</th>
+                            <td>Theory of Computation, Computer Network Architectures, Software Engineering</td>
+                            <td>Web Interface Nodes, Cloud Systems, Machine Learning Pipelines</td>
+                        </tr>
+                        <tr>
+                            <th scope="row">Advanced (Sem 7-8)</th>
+                            <td>NPTEL, Open Electives</td>
+                            <td>Deep Learning Models, Natural Language Parsers, Big Data Analytics</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </article>
+
+            <section class="card" aria-labelledby="mini-project-heading">
+                <h2 id="mini-project-heading">Mini-Project Framework</h2>
+                <h3>Machine Learning System</h3>
+                <p><strong>System Backend:</strong> Python pipelines mapping mathematical algorithms utilizing Scikit-Learn validation structures.</p>
+                <p><strong>Presentation Tier:</strong> HTML5 layouts rendering structural tabular vectors connected via backend integration models.</p>
+                
+                <!-- JavaScript Trigger Handler Linked Natively -->
+                <button class="toggle-metrics-btn" aria-expanded="false" onclick="toggleMetricsPanel('vtu-ml-metrics', this)">Pipeline Analytics</button>
+                
+                <div id="vtu-ml-metrics" class="dynamic-status-panel hidden" role="region" aria-live="polite">
+                    <table class="bio-table">
+                        <caption>Model Performance Threshold Constants</caption>
+                        <thead>
+                            <tr>
+                                <th scope="col">Parameter</th>
+                                <th scope="col">Value</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><th scope="row">Classification Algorithm</th><td>Random Forest Vector Classifier</td></tr>
+                            <tr><th scope="row">Dataset Ingestion Capacity</th><td>10,000 Records (CSV Structure)</td></tr>
+                            <tr><th scope="row">Training Partition Ratio</th><td>80:20 Split Configuration</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <p>Anuvartik Mirji Bharatesh Institute of Technology</p>
+        </footer>
+
+        <!-- Native Script Execution Bypass Layer -->
+        <script>
+            function toggleMetricsPanel(panelId, btnElement) {
+                const panel = document.getElementById(panelId);
+                
+                // Toggle the visibility class smoothly
+                if (panel.classList.contains('hidden')) {
+                    panel.classList.remove('hidden');
+                    btnElement.setAttribute('aria-expanded', 'true');
+                    btnElement.textContent = 'Hide Analytics Panel';
+                } else {
+                    panel.classList.add('hidden');
+                    btnElement.setAttribute('aria-expanded', 'false');
+                    btnElement.textContent = 'Pipeline Analytics';
+                }
+            }
+        </script>
+    </body>
+</html>
